@@ -1,14 +1,20 @@
 
-j = "Aa"
-S= "aAAbbbb"
+J = "aA"
+S = "aAAbbbb"
 
-countJ = j.legnth
-countS = S.legnth
+counter = 0
+counter1 = 0
 answerCount = 0
 
-//j.charAt(1) == S.charAt(1) ? console.log('SAMEE'): console.log('NO SAMEE')
-for (i = 0; i == j.legnth; i++) {
-    console.log(j.charAt(i))
+while (counter <= S.length) {
+    counter1 = 0
+    while (counter1 != J.length ) {
+       S.charAt(counter) == J.charAt(counter1) ? answerCount++ : answerCount
+        counter1++
+    }     
+     counter++
 }
+console.log(answerCount)
 
-//console.log(answerCount)
+
+
